@@ -43,3 +43,17 @@
 #messages > li:nth-child(odd) {
     background: #efefef;
 }
+
+#typing {
+    opacity: .5;
+}
+
+#gridContainer {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+#connectedUsers {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}

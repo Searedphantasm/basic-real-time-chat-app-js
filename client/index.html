@@ -5,13 +5,23 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script defer src="/socket.io/socket.io.js"></script>
+    <script defer src="script.js"></script>
     <link rel="stylesheet" href="/style.css">
     <title>Hang Out 😎</title>
 </head>
 <body>
     <div id="gridContainer">
         <div id="chatApp">
+            <p id="connectionStatus"></p>
+            <p id="typing"></p>
             <ul id="messages">
+
+            </ul>
+        </div>
+        <div id="listOfUsers">
+            <h1>Connected Users</h1>
+            <ul id="connectedUsers">
 
             </ul>
         </div>
@@ -25,9 +35,5 @@
         </div>
     </div>
 
-    <script src="/socket.io/socket.io.js"></script>
-    <script>
-
-    </script>
 </body>
 </html>
