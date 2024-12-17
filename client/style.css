@@ -57,3 +57,15 @@
     display: grid;
     grid-template-columns: 30% 70%;
 }
+
+#privateMsgs {
+    padding-bottom: 30%;
+}
+
+.privMsg > li{
+    padding: 0.5rem 1rem;
+}
+
+.privMsg > li:nth-child(odd) {
+    background-color: #efefef;
+}

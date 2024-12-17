@@ -36,6 +36,11 @@ io.on("connection", (socket) => {
 
     socket.on("userIsNotTyping", () => {
         socket.broadcast.emit("userIsNotTyping");
+    });
+
+    socket.on("sendPrivateMsg",(senderID,recID,senderName,msg) => {
+        // it's used to send message to specific id.
+        socket.to(recID).emit("recPrivateMsg",senderID,senderName,msg);
     })
 
     socket.on("disconnect", () => {
